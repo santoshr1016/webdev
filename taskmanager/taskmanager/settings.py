@@ -55,7 +55,7 @@ ROOT_URLCONF = 'taskmanager.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,3 +133,13 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+"""
+task = Task(title="Implement User Profile Picture Uploading", description="Design and implement a feature that allows users to upload, change, and delete their profile picture on their user account.", creator=creator)
+
+Excerpt From
+Ultimate Django for Web App Development Using Python: Build Modern, Reliable, and Scalable Production-Grade Web Applications with Django and Python
+Leonardo Luis Lazzaro
+This material may be protected by copyright.
+
+"""
